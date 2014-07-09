@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/home/grszhen/DiscoPoP/SNU/LU'
+let g:netrw_dirhist_2='/home/grszhen/DiscoPoP/parsec-3.0/pkgs/apps/fluidanimate/src'
+let g:netrw_dirhist_3='/home/grszhen/DiscoPoP/SNU'
+let g:netrw_dirhist_4='/home/grszhen/DiscoPoP/SNU/result-3.2'
+let g:netrw_dirhist_5='/home/grszhen/DiscoPoP/SNU_NPB-1.0.3/NPB3.3-SER-C/common'
+let g:netrw_dirhist_6='/home/grszhen/DiscoPoP/parsec-3.0/pkgs/libs/libjpeg'
+let g:netrw_dirhist_7='/home/grszhen/DiscoPoP/parsec-3.0/config'
+let g:netrw_dirhist_8='/home/grszhen/.vim'
