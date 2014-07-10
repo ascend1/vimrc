@@ -22,6 +22,9 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 " shortcut for toggle TagBar
 nnoremap <silent> <F5> :TagbarToggle<CR>
 
+" automatically open miniBufExpl
+autocmd vimenter * MBEOpen
+
 " Uncomment the next line to make Vim more Vi-compatible
 " NOTE: debian.vim sets 'nocompatible'.  Setting 'compatible' changes numerous
 " options, so any other options should be set AFTER setting 'compatible'.
@@ -65,12 +68,16 @@ colorscheme molokai
 " filetype plugin on
 filetype plugin indent on
 
-" Syntastic
+" custom Syntastic symbols
 let g:syntastic_enable_signs = 1
 let g:syntastic_error_symbol         = '✗'
 let g:syntastic_style_error_symbol   = '✗'
 let g:syntastic_warning_symbol       = '⚠'
 let g:syntastic_style_warning_symbol = '⚠'
+
+" let Syntastic support C++11 and use the libc++ with clang
+let g:syntastic_cpp_compiler = 'clang++'
+let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
 
 " Uncomment the following to have Vim jump to the last position when
 " reopening a file
